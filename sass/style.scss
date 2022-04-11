@@ -1,3 +1,50 @@
+footer {
+background: #353535 ;
+color: #fff;
+height: 200px;
+
+ ul {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ li {
+     margin-bottom: 10px;
+ }
+
+ .titre {
+     font-family: Shrikhand;
+     font-size: 18px;
+     margin-bottom: 20px;
+     padding-top: 20px;
+ }
+
+ i {
+     font-size: 12px;
+     margin-right: 5px;
+ }
+
+ 
+}
+
+
+
+
 body {
-    background: black;
+    font-family: Roboto;
+}
+
+
+@font-face {
+    font-family: Shrikhand ;
+    src: url(Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
 }
