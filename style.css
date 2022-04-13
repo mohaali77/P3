@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   background: #353535;
   color: #fff;
@@ -24,8 +25,60 @@ footer i {
   margin-right: 5px;
 }
 
+header {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+header img {
+  height: 30px;
+}
+
+.section1 {
+  background: #f6f6f6;
+  text-align: center;
+}
+.section1 .lieu {
+  background: #eaeaea;
+  padding: 15px 0px 15px 0px;
+}
+.section1 i {
+  margin-right: 10px;
+}
+.section1 h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 30px 0px 15px 0px;
+  margin: 0px;
+}
+.section1 .découvrez {
+  padding-bottom: 15px;
+  font-size: 19px;
+}
+.section1 .explorer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.section1 p {
+  padding: 15px 25px 15px 25px;
+  border: solid 1px transparent;
+  border-radius: 25px 25px 25px 25px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 15px;
+  margin: 0px;
+  box-shadow: grey 0px 1px 5px 0px;
+}
+.section1 p:hover {
+  opacity: 0.9;
+  box-shadow: grey 0px 3px 10px 0px;
+  cursor: pointer;
+}
+
 body {
   font-family: Roboto;
+  margin-right: 0px;
 }
 
 @font-face {
