@@ -89,6 +89,7 @@ header img {
   justify-content: center;
   margin-left: 25px;
   margin-right: 25px;
+  position: relative;
 }
 .fonctionnement .numéro {
   border: 1px solid transparent;
@@ -101,8 +102,7 @@ header img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 25px;
-  margin-left: 10px;
+  left: -15px;
 }
 .fonctionnement i {
   font-size: 20px;
@@ -144,6 +144,7 @@ header img {
   background: #fff;
   box-shadow: grey 0px 1px 5px 0px;
   width: 100%;
+  position: relative;
 }
 .restaurants article {
   display: flex;
@@ -164,6 +165,21 @@ header img {
 .restaurants i:hover {
   background: linear-gradient(#9356DC, #FF79DA);
 }
+.restaurants .nouveau {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  top: 15px;
+  right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 2px;
+}
+.restaurants .nouveau p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
 
 body {
   font-family: Roboto;
@@ -177,6 +193,38 @@ body {
 @font-face {
   font-family: Roboto;
   src: url(Roboto-Regular.ttf);
+}
+@media screen and (min-width: 769px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+  .restaurants article {
+    width: 42%;
+    margin: 20px;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+  .restaurants a {
+    margin: 0px;
+  }
+
+  .fonctionnement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .fonctionnement .case {
+    margin: 0px;
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

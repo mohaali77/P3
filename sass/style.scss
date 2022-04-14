@@ -107,6 +107,7 @@ header {
         justify-content: center;
         margin-left: 25px;
         margin-right: 25px;
+        position: relative;
     }
 
     .numéro {
@@ -120,8 +121,7 @@ header {
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-top: 25px;
-        margin-left: 10px;
+        left: -15px;
     }
 
     i {
@@ -170,6 +170,7 @@ header {
         background: #fff;
         box-shadow: grey 0px 1px 5px 0px;
         width: 100%;
+        position: relative;
     }
 
     article {
@@ -196,6 +197,23 @@ header {
         }
     }
 
+   .nouveau { 
+        position: absolute;
+        background-color: #99e2d0;
+        color: #0a8d6d;
+        top: 15px;
+        right: 10px;
+        height: 30px;
+        width: 80px;
+        border-radius: 2px; 
+
+        p {
+            margin-top: 5px;
+            margin-left: 10px;
+            font-weight: bold;
+         }
+    }
+
 }
 
 
@@ -213,4 +231,49 @@ body {
 @font-face {
     font-family: Roboto;
     src: url(Roboto-Regular.ttf);
+}
+
+
+@media screen and (min-width: 769px)
+{
+    
+.restaurants {
+
+    display: flex;
+    justify-content: center;
+    
+    article {
+        width: 42%;
+        margin: 20px
+    }
+
+    h2 {
+        text-align: center ;
+    }
+
+    a {
+        margin: 0px;
+    }
+
+}
+
+.fonctionnement{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .case {
+        margin: 0px;
+        width: 30%;
+    }
+}
+
 }
