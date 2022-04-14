@@ -83,12 +83,6 @@ header {
         margin: 0px;
         box-shadow: grey 0px 1px 5px 0px;
 
-        &:hover {
-            opacity: 0.9;
-            box-shadow: grey 0px 3px 10px 0px;
-            cursor: pointer;
-        }
-
     }
 
 }
@@ -191,11 +185,10 @@ header {
 
     i {
         font-size: 20px;
-        
-        &:hover {
-             background: linear-gradient(#9356DC, #FF79DA);
-        }
     }
+        
+
+}
 
    .nouveau { 
         position: absolute;
@@ -214,6 +207,11 @@ header {
          }
     }
 
+
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: grey 0px 3px 10px 0px;
+    cursor: pointer;
 }
 
 
@@ -232,6 +230,17 @@ body {
     font-family: Roboto;
     src: url(Roboto-Regular.ttf);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 769px)
@@ -274,6 +283,20 @@ body {
         margin: 0px;
         width: 30%;
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        text-align: center;
+    }
+
+.titre {
+    padding-top: 0px;
+}
+
 }
 
 }
