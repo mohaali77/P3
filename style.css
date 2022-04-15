@@ -187,11 +187,11 @@ body {
 
 @font-face {
   font-family: Shrikhand;
-  src: url(Shrikhand-Regular.ttf);
+  src: url(police/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(Roboto-Regular.ttf);
+  src: url(police/Roboto-Regular.ttf);
 }
 @media screen and (min-width: 769px) {
   .restaurants {

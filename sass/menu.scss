@@ -1,0 +1,110 @@
+header {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+        height: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        font-size: 20px;
+        left: 5px;
+        position: absolute;
+    }
+}
+
+
+section {
+    background-color: #eaeaea;
+
+    img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .entete {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            font-family: Shrikhand;
+        }
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .menu {
+
+        .repas {
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: grey 0px 1px 5px 0px;
+            width: 90%;
+        }
+    }
+}
+
+footer {
+    background: #353535 ;
+    color: #fff;
+    height: 200px;
+    
+        ul {
+         list-style: none;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        li {
+            margin-bottom: 10px;
+        }
+    
+        .titre {
+            font-family: Shrikhand;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+    
+        i {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+    
+}
+
+
+body {
+    font-family: Roboto;
+    margin: 0px;
+}
+
+
+@font-face {
+    font-family: Shrikhand ;
+    src: url(police/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(police/Roboto-Regular.ttf);
+}
