@@ -32,39 +32,39 @@ section .imagefond img {
   object-fit: cover;
 }
 
-main {
+.essentiel {
   background-color: #eaeaea;
   border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: relative;
   top: -35px;
 }
-main .entete {
+.essentiel .entete {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-main .entete h1 {
+.essentiel .entete h1 {
   font-family: Shrikhand;
 }
-main .entete i {
+.essentiel .entete i {
   font-size: 20px;
 }
-main .menu {
+.essentiel .menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main .menu .divtitre {
+.essentiel .menu .divtitre {
   width: 90%;
 }
-main .menu .divtitre h2 {
+.essentiel .menu .divtitre h2 {
   width: 2.5em;
   text-transform: uppercase;
   font-size: 16px;
   border-bottom: solid #99E2D0;
 }
-main .menu .liste {
+.essentiel .menu .liste {
   display: flex;
   justify-content: space-between;
   background: #fff;
@@ -74,22 +74,22 @@ main .menu .liste {
   height: 70px;
   margin-bottom: 20px;
 }
-main .menu .liste .prix {
+.essentiel .menu .liste .prix {
   margin: 40px 20px 0px 0px;
   font-weight: bold;
 }
-main .menu .liste p {
+.essentiel .menu .liste p {
   margin: 17px 0px 0px 20px;
 }
-main .menu .liste .infoduplat {
+.essentiel .menu .liste .infoduplat {
   font-size: 14px;
 }
-main .explorer {
+.essentiel .explorer {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 }
-main .explorer p {
+.essentiel .explorer p {
   padding: 15px 25px 15px 25px;
   border-radius: 25px 25px 25px 25px;
   color: #fff;
@@ -164,6 +164,26 @@ body {
     overflow: hidden;
     white-space: nowrap;
   }
+}
+.coeurvide {
+  position: absolute;
+  color: black;
+  top: 27px;
+}
+
+.coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: 27px;
+}
+.coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
 }
 
 /*# sourceMappingURL=menu.css.map */

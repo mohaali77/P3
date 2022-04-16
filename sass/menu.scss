@@ -39,7 +39,7 @@ section {
 }
 
 
-main {
+.essentiel {
     background-color: #eaeaea;
     border-radius: 40px 40px 0px 0px;
     width: 100%;
@@ -57,8 +57,9 @@ main {
 
         i {
             font-size: 20px;
-        }
+        }        
     }
+
 
     .menu {
         display: flex;
@@ -131,31 +132,31 @@ footer {
     color: #fff;
     height: 200px;
     
-        ul {
-         list-style: none;
-         margin: 0px;
-        }
+    ul {
+        list-style: none;
+        margin: 0px;
+    }
     
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
     
-        li {
-            margin-bottom: 10px;
-        }
+    li {
+        margin-bottom: 10px;
+    }
     
-        .titre {
-            font-family: Shrikhand;
-            font-size: 18px;
-            margin-bottom: 20px;
-            padding-top: 20px;
-        }
+    .titre {
+        font-family: Shrikhand;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
     
-        i {
-            font-size: 12px;
-            margin-right: 5px;
-        }
+    i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
     
 }
 
@@ -205,3 +206,28 @@ section {
 }
 
 }
+
+
+.coeurvide {
+    position: absolute;
+    color: black;
+    top: 27px;
+}
+
+.coeurplein {
+    position: absolute;
+    color: transparent;
+    transform: scale(0.5);
+    top:27px;
+    
+    &:hover {
+        background: linear-gradient( #9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 0.2s;
+
+    }
+}
+
