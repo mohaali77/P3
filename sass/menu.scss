@@ -18,20 +18,33 @@ header {
 
     i {
         font-size: 20px;
-        left: 5px;
+        left: 10px;
         position: absolute;
     }
 }
 
 
 section {
-    background-color: #eaeaea;
+    height: 1404px;
 
-    img {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
+    .imagefond {
+        height: 250px;
+    
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover; 
+        }
     }
+}
+
+
+main {
+    background-color: #eaeaea;
+    border-radius: 40px 40px 0px 0px;
+    width: 100%;
+    position: relative;
+    top: -35px;
 
     .entete {
         display: flex;
@@ -48,16 +61,69 @@ section {
     }
 
     .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        .repas {
+        .divtitre { 
+            width: 90%;
+
+            h2 {
+                width: 2.5em;
+                text-transform: uppercase;
+                font-size: 16px;
+                border-bottom: solid #99E2D0 ;
+            }
+
+        }
+
+
+        .liste {
             display: flex;
             justify-content: space-between;
             background: #fff;
             border-radius: 20px;
             box-shadow: grey 0px 1px 5px 0px;
             width: 90%;
+            height: 70px;
+            margin-bottom: 20px;
+
+            .prix {
+                margin: 40px 20px 0px 0px;
+                font-weight: bold;
+            }
+
+            p {
+                margin: 17px 0px 0px 20px;
+            }
+
+            .infoduplat {
+                font-size: 14px;
+            
+            }     
         }
     }
+
+    .explorer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        p {
+            padding: 15px 25px 15px 25px;
+            border-radius: 25px 25px 25px 25px;
+            color: #fff;
+            background: linear-gradient(#FF79DA,#9356DC );
+            font-size: 15px;
+            margin: 30px;
+            box-shadow: grey 0px 1px 5px 0px;
+            width: 140px;
+            text-align: center;
+    
+        }
+
+    }
+
 }
 
 footer {
@@ -67,6 +133,7 @@ footer {
     
         ul {
          list-style: none;
+         margin: 0px;
         }
     
         a {
@@ -92,6 +159,11 @@ footer {
     
 }
 
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: grey 0px 3px 10px 0px;
+    cursor: pointer;
+}
 
 body {
     font-family: Roboto;
@@ -107,4 +179,29 @@ body {
 @font-face {
     font-family: Roboto;
     src: url(police/Roboto-Regular.ttf);
+}
+
+@media screen and (min-width: 769px)
+{
+
+section {
+    height: 864px !important ; 
+}
+
+.menu {
+    display: flex !important;
+    justify-content: space-evenly !important;
+
+    .liste {
+        width: 28% !important;
+
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+}
+
 }
