@@ -186,7 +186,36 @@ header {
     i {
         font-size: 23px;
     }
+
+    .coeur {
+        position: relative;
+
+        .coeurvide {
+            position: absolute;
+            color: black;
+            top: -10px;
+            right: 10px;
+        }
+    
+        .coeurplein {
+            position: absolute;
+            color: transparent;
+            transform: scale(0.5);
+            top: -10px;
+            right: 10px;
+            
+            &:hover {
+                background: linear-gradient( #9356DC, #FF79DA);
+                -webkit-background-clip: text;
+                color: transparent;
+                transform: scale(1);
+                transition-property: transform;
+                transition-duration: 0.2s;
         
+            }
+        }
+    }
+         
 
 }
 
@@ -230,42 +259,6 @@ body {
     font-family: Roboto;
     src: url(police/Roboto-Regular.ttf);
 }
-
-
-
-.coeur {
-    position: relative;
-}
-
-.coeurvide {
-    position: absolute;
-    color: black;
-    top: -10px;
-    right: 10px;
-}
-
-.coeurplein {
-    position: absolute;
-    color: transparent;
-    transform: scale(0.5);
-    top: -10px;
-    right: 10px;
-    
-    &:hover {
-        background: linear-gradient( #9356DC, #FF79DA);
-        -webkit-background-clip: text;
-        color: transparent;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 0.2s;
-
-    }
-}
-
-
-
-
-
 
 
 

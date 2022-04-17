@@ -157,6 +157,30 @@ header img {
 .restaurants i {
   font-size: 23px;
 }
+.restaurants .coeur {
+  position: relative;
+}
+.restaurants .coeur .coeurvide {
+  position: absolute;
+  color: black;
+  top: -10px;
+  right: 10px;
+}
+.restaurants .coeur .coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: -10px;
+  right: 10px;
+}
+.restaurants .coeur .coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
 
 .nouveau {
   position: absolute;
@@ -193,33 +217,6 @@ body {
   font-family: Roboto;
   src: url(police/Roboto-Regular.ttf);
 }
-.coeur {
-  position: relative;
-}
-
-.coeurvide {
-  position: absolute;
-  color: black;
-  top: -10px;
-  right: 10px;
-}
-
-.coeurplein {
-  position: absolute;
-  color: transparent;
-  transform: scale(0.5);
-  top: -10px;
-  right: 10px;
-}
-.coeurplein:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 0.2s;
-}
-
 @media screen and (min-width: 769px) {
   .restaurants {
     display: flex;
