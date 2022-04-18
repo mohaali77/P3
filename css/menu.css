@@ -109,6 +109,11 @@ section .imagefond img {
   text-align: center;
 }
 
+.footermenu2 {
+  position: relative;
+  top: 90px;
+}
+
 footer {
   background: #353535;
   color: #fff;
@@ -149,11 +154,11 @@ body {
 
 @font-face {
   font-family: Shrikhand;
-  src: url(police/Shrikhand-Regular.ttf);
+  src: url(../police/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(police/Roboto-Regular.ttf);
+  src: url(../police/Roboto-Regular.ttf);
 }
 @media screen and (min-width: 769px) {
   section {

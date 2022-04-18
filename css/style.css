@@ -215,11 +215,11 @@ body {
 
 @font-face {
   font-family: Shrikhand;
-  src: url(police/Shrikhand-Regular.ttf);
+  src: url(../police/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(police/Roboto-Regular.ttf);
+  src: url(../police/Roboto-Regular.ttf);
 }
 #pagedechargement {
   background: #fff;
