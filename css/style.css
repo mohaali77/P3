@@ -7,7 +7,7 @@
   height: 100%;
   width: 100%;
   animation: visibility;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: pagedechargement;
   display: flex;
   justify-content: center;
