@@ -1,0 +1,22 @@
+.coeurvide {
+    position: absolute;
+    color: black;
+    top: 27px;
+}
+
+.coeurplein {
+    position: absolute;
+    color: transparent;
+    transform: scale(0.5);
+    top:27px;
+    
+    &:hover {
+        background: linear-gradient( #9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 0.2s;
+
+    }
+}

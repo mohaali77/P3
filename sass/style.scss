@@ -1,35 +1,10 @@
-footer {
-background: #353535 ;
-color: #fff;
-height: 200px;
-margin-top: 70px;
+@import '_loader.scss';
+@import '_coeur-accueil.scss';
 
 
-    ul {
-     list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    li {
-        margin-bottom: 10px;
-    }
-
-    .titre {
-        font-family: Shrikhand;
-        font-size: 18px;
-        margin-bottom: 20px;
-        padding-top: 20px;
-    }
-
-    i {
-        font-size: 12px;
-        margin-right: 5px;
-    }
-
+body {
+    font-family: Roboto;
+    margin: 0px;
 }
 
 header {
@@ -193,39 +168,7 @@ header {
         font-size: 23px;
     }
 
-    .coeur {
-        position: relative;
-
-        .coeurvide {
-            position: absolute;
-            color: black;
-            top: -10px;
-            right: 10px;
-        }
-    
-        .coeurplein {
-            position: absolute;
-            color: transparent;
-            transform: scale(0.5);
-            top: -10px;
-            right: 10px;
-            
-            &:hover {
-                background: linear-gradient( #9356DC, #FF79DA);
-                -webkit-background-clip: text;
-                color: transparent;
-                transform: scale(1);
-                transition-property: transform;
-                transition-duration: 0.2s;
-        
-            }
-        }
-    }
-         
-
-}
-
-   .nouveau { 
+    .nouveau { 
         position: absolute;
         background-color: #99e2d0;
         color: #0a8d6d;
@@ -234,14 +177,54 @@ header {
         height: 30px;
         width: 80px;
         border-radius: 2px; 
-
+    
         p {
             margin-top: 5px;
             margin-left: 10px;
             font-weight: bold;
-         }
+        }
+    
     }
+         
+}
 
+
+
+footer {
+    background: #353535 ;
+    color: #fff;
+    height: 200px;
+    margin-top: 70px;
+    
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    
+    .titre {
+        font-family: Shrikhand;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    
+}
+
+/*<--------------------------BOUTON ANIMATION-------------------------->*/
 
 .btn:hover {
     opacity: 0.9;
@@ -249,12 +232,7 @@ header {
     cursor: pointer;
 }
 
-
-body {
-    font-family: Roboto;
-    margin: 0px;
-}
-
+/*<--------------------------POLICE-------------------------->*/
 
 @font-face {
     font-family: Shrikhand ;
@@ -267,63 +245,7 @@ body {
 }
 
 
-
-
-
-#pagedechargement {
-    background: #fff;
-    opacity: 0.8;
-    position: fixed;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    animation: visibility;
-    animation-duration: 3s;
-    animation-name: pagedechargement;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-
-    .chargement {
-        height: 130px;
-        width: 130px;
-        border-left: #9356DC solid 13px ;
-        border-right: #FF79DA solid 13px ;
-        border-top: grey solid 13px ;
-        border-bottom:#99E2D0  solid 10px;
-        border-radius: 100% ;
-        animation: spin infinite 1.5s linear;
-        animation-name: chargement;
-    }
-}
-
-@keyframes chargement {
-    from {
-       transform: rotate(0deg);
-    }
-  
-    to {
-       transform: rotate(360deg);
-    }
-}
-
-
-
-
-@keyframes pagedechargement {
-    from {
-        visibility: hidden;
-    }
-
-    to {
-        visibility: visible;
-    }
-}
-
-
-
-
+/*<--------------------------DESK-------------------------->*/
 
 
 @media screen and (min-width: 769px)

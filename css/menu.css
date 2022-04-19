@@ -1,4 +1,103 @@
 @charset "UTF-8";
+.entrées {
+  animation-duration: 2s;
+  animation-name: fondutransition;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 10px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 0px;
+  }
+}
+.plats {
+  animation-duration: 2.5s;
+  animation-name: fondutransition;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 0px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 20px;
+  }
+}
+.desserts {
+  animation-duration: 3s;
+  animation-name: fondutransition;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 20px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 0px;
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 0;
+  justify-content: center;
+}
+.checkbox i {
+  color: white;
+  font-size: 23px;
+}
+
+.liste:hover .checkbox {
+  width: 60px;
+  background: #99E2D0;
+  transition-duration: 1s;
+}
+.liste:hover .checkbox i {
+  transform: rotate(360deg);
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+
+.coeurvide {
+  position: absolute;
+  color: black;
+  top: 27px;
+}
+
+.coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: 27px;
+}
+.coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0px;
+}
+
 header {
   margin-bottom: 10px;
   margin-top: 20px;
@@ -109,15 +208,11 @@ section .imagefond img {
   text-align: center;
 }
 
-.footermenu2 {
-  position: relative;
-  top: 90px;
-}
-
 footer {
   background: #353535;
   color: #fff;
   height: 200px;
+  position: relative;
 }
 footer ul {
   list-style: none;
@@ -141,17 +236,20 @@ footer i {
   margin-right: 5px;
 }
 
+/*<--------------------------FOOTER SPECIAL MENU2-------------------------->*/
+.footermenu2 {
+  position: relative;
+  top: 90px;
+}
+
+/*<--------------------------BOUTON ANIMATION-------------------------->*/
 .btn:hover {
   opacity: 0.9;
   box-shadow: grey 0px 3px 10px 0px;
   cursor: pointer;
 }
 
-body {
-  font-family: Roboto;
-  margin: 0px;
-}
-
+/*<--------------------------POLICE-------------------------->*/
 @font-face {
   font-family: Shrikhand;
   src: url(../police/Shrikhand-Regular.ttf);
@@ -160,6 +258,7 @@ body {
   font-family: Roboto;
   src: url(../police/Roboto-Regular.ttf);
 }
+/*<--------------------------DESK-------------------------->*/
 @media screen and (min-width: 769px) {
   section {
     height: 864px !important;
@@ -177,99 +276,13 @@ body {
     overflow: hidden;
     white-space: nowrap;
   }
-}
-.coeurvide {
-  position: absolute;
-  color: black;
-  top: 27px;
-}
 
-.coeurplein {
-  position: absolute;
-  color: transparent;
-  transform: scale(0.5);
-  top: 27px;
-}
-.coeurplein:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 0.2s;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  width: 0;
-  justify-content: center;
-}
-.checkbox i {
-  color: white;
-  font-size: 23px;
-}
-
-.liste:hover .checkbox {
-  width: 60px;
-  background: #99E2D0;
-  transition-duration: 1s;
-}
-.liste:hover .checkbox i {
-  transform: rotate(360deg);
-  transition-property: transform;
-  transition-duration: 0.8s;
-}
-
-.entrées {
-  animation-duration: 2s;
-  animation-name: fondutransition;
-}
-
-@keyframes fondutransition {
-  from {
-    opacity: 0;
-    top: 0%;
-    margin-top: 10px;
+  footer {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    opacity: 1;
-    top: 100%;
-    margin-top: 0px;
-  }
-}
-.plats {
-  animation-duration: 2.5s;
-  animation-name: fondutransition;
-}
-
-@keyframes fondutransition {
-  from {
-    opacity: 0;
-    top: 0%;
-    margin-top: 0px;
-  }
-  to {
-    opacity: 1;
-    top: 100%;
-    margin-top: 20px;
-  }
-}
-.desserts {
-  animation-duration: 3s;
-  animation-name: fondutransition;
-}
-
-@keyframes fondutransition {
-  from {
-    opacity: 0;
-    top: 0%;
-    margin-top: 20px;
-  }
-  to {
-    opacity: 1;
-    top: 100%;
-    margin-top: 0px;
+  footer ul {
+    text-align: center;
   }
 }
 

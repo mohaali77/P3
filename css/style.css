@@ -1,29 +1,75 @@
 @charset "UTF-8";
-footer {
-  background: #353535;
-  color: #fff;
-  height: 200px;
-  margin-top: 70px;
+#pagedechargement {
+  background: #fff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  animation: visibility;
+  animation-duration: 3s;
+  animation-name: pagedechargement;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
 }
-footer ul {
-  list-style: none;
+#pagedechargement .chargement {
+  height: 130px;
+  width: 130px;
+  border-left: #9356DC solid 13px;
+  border-right: #FF79DA solid 13px;
+  border-top: grey solid 13px;
+  border-bottom: #99E2D0 solid 10px;
+  border-radius: 100%;
+  animation: spin infinite 1.5s linear;
+  animation-name: chargement;
 }
-footer a {
-  text-decoration: none;
-  color: #fff;
+
+@keyframes chargement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-footer li {
-  margin-bottom: 10px;
+@keyframes pagedechargement {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
 }
-footer .titre {
-  font-family: Shrikhand;
-  font-size: 18px;
-  margin-bottom: 20px;
-  padding-top: 20px;
+.coeur {
+  position: relative;
 }
-footer i {
-  font-size: 12px;
-  margin-right: 5px;
+.coeur .coeurvide {
+  position: absolute;
+  color: black;
+  top: -10px;
+  right: 10px;
+}
+.coeur .coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: -10px;
+  right: 10px;
+}
+.coeur .coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0px;
 }
 
 header {
@@ -161,32 +207,7 @@ header img {
 .restaurants i {
   font-size: 23px;
 }
-.restaurants .coeur {
-  position: relative;
-}
-.restaurants .coeur .coeurvide {
-  position: absolute;
-  color: black;
-  top: -10px;
-  right: 10px;
-}
-.restaurants .coeur .coeurplein {
-  position: absolute;
-  color: transparent;
-  transform: scale(0.5);
-  top: -10px;
-  right: 10px;
-}
-.restaurants .coeur .coeurplein:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 0.2s;
-}
-
-.nouveau {
+.restaurants .nouveau {
   position: absolute;
   background-color: #99e2d0;
   color: #0a8d6d;
@@ -196,23 +217,47 @@ header img {
   width: 80px;
   border-radius: 2px;
 }
-.nouveau p {
+.restaurants .nouveau p {
   margin-top: 5px;
   margin-left: 10px;
   font-weight: bold;
 }
 
+footer {
+  background: #353535;
+  color: #fff;
+  height: 200px;
+  margin-top: 70px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer .titre {
+  font-family: Shrikhand;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+footer i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*<--------------------------BOUTON ANIMATION-------------------------->*/
 .btn:hover {
   opacity: 0.9;
   box-shadow: grey 0px 3px 10px 0px;
   cursor: pointer;
 }
 
-body {
-  font-family: Roboto;
-  margin: 0px;
-}
-
+/*<--------------------------POLICE-------------------------->*/
 @font-face {
   font-family: Shrikhand;
   src: url(../police/Shrikhand-Regular.ttf);
@@ -221,49 +266,7 @@ body {
   font-family: Roboto;
   src: url(../police/Roboto-Regular.ttf);
 }
-#pagedechargement {
-  background: #fff;
-  opacity: 0.8;
-  position: fixed;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
-  animation: visibility;
-  animation-duration: 3s;
-  animation-name: pagedechargement;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-}
-#pagedechargement .chargement {
-  height: 130px;
-  width: 130px;
-  border-left: #9356DC solid 13px;
-  border-right: #FF79DA solid 13px;
-  border-top: grey solid 13px;
-  border-bottom: #99E2D0 solid 10px;
-  border-radius: 100%;
-  animation: spin infinite 1.5s linear;
-  animation-name: chargement;
-}
-
-@keyframes chargement {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes pagedechargement {
-  from {
-    visibility: hidden;
-  }
-  to {
-    visibility: visible;
-  }
-}
+/*<--------------------------DESK-------------------------->*/
 @media screen and (min-width: 769px) {
   .restaurants {
     display: flex;
