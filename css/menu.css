@@ -58,7 +58,7 @@
 }
 .checkbox i {
   color: white;
-  font-size: 23px;
+  font-size: 26px;
 }
 
 .liste:hover .checkbox {
@@ -83,6 +83,7 @@
   color: transparent;
   transform: scale(0.5);
   top: 27px;
+  width: 21px;
 }
 .coeurplein:hover {
   background: linear-gradient(#9356DC, #FF79DA);
