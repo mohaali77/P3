@@ -1,0 +1,320 @@
+@charset "UTF-8";
+#pagedechargement {
+  background: #fff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  animation: visibility;
+  animation-duration: 2s;
+  animation-name: pagedechargement;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#pagedechargement .chargement {
+  height: 130px;
+  width: 130px;
+  border-left: #9356DC solid 13px;
+  border-right: #FF79DA solid 13px;
+  border-top: grey solid 13px;
+  border-bottom: #99E2D0 solid 10px;
+  border-radius: 100%;
+  animation: spin infinite 1.5s linear;
+  animation-name: chargement;
+}
+
+@keyframes chargement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pagedechargement {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+.coeur {
+  position: relative;
+}
+.coeur .coeurvide {
+  position: absolute;
+  color: black;
+  top: -10px;
+  right: 10px;
+}
+.coeur .coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: -10px;
+  right: 10px;
+}
+.coeur .coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0px;
+}
+
+header {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+header img {
+  height: 30px;
+}
+
+.section1 {
+  background: #f6f6f6;
+  text-align: center;
+}
+.section1 .lieu {
+  background: #eaeaea;
+  padding: 15px 0px 15px 0px;
+  box-shadow: inset 0 10px 5px -5px #d4d4d4;
+}
+.section1 i {
+  margin-right: 10px;
+}
+.section1 h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 30px 0px 15px 0px;
+  margin: 0px;
+}
+.section1 .découvrez {
+  padding-bottom: 15px;
+  font-size: 19px;
+}
+.section1 .explorer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.section1 p {
+  padding: 15px 25px 15px 25px;
+  border-radius: 25px 25px 25px 25px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 15px;
+  margin: 0px;
+  box-shadow: grey 0px 1px 5px 0px;
+}
+
+.fonctionnement h2 {
+  margin: 25px 0px 25px 20px;
+}
+.fonctionnement .case {
+  border: 1px solid transparent;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: grey 0px 1px 5px 0px;
+  margin-bottom: 20px;
+  padding: 10px 0px 10px 0px;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  position: relative;
+}
+.fonctionnement .numéro {
+  border: 1px solid transparent;
+  border-radius: 100%;
+  background: #9356DC;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -15px;
+}
+.fonctionnement i {
+  font-size: 20px;
+  margin-right: 20px;
+  color: gray;
+}
+.fonctionnement .fa-store:before {
+  color: #9356DC;
+}
+.fonctionnement .fa-mobile-screen-button:before {
+  margin-left: 10px;
+}
+.fonctionnement p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.restaurants {
+  background: #f6f6f6;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurants h2 {
+  padding-top: 50px;
+  margin: 0px 0px 0px 20px;
+  width: 100%;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: grey 0px 1px 5px 0px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.restaurants figure {
+  display: flex;
+  width: 95%;
+  margin: 25px 0px 0px 0px;
+}
+.restaurants img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurants p {
+  padding-right: 60px;
+}
+.restaurants i {
+  font-size: 23px;
+}
+.restaurants .nouveau {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  top: 15px;
+  right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 2px;
+}
+.restaurants .nouveau p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+footer {
+  background: #353535;
+  color: #fff;
+  height: 200px;
+  margin-top: 70px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer .titre {
+  font-family: Shrikhand;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+footer i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*<--------------------------BOUTON ANIMATION-------------------------->*/
+.btn {
+  transform: scale(1);
+}
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: grey 0px 3px 10px 0px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*<--------------------------POLICE-------------------------->*/
+@font-face {
+  font-family: Shrikhand;
+  src: url(../police/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../police/Roboto-Regular.ttf);
+}
+/*<--------------------------DESK-------------------------->*/
+@media screen and (min-width: 769px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+  .restaurants figure {
+    width: 42%;
+    margin: 20px;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+  .restaurants a {
+    margin: 0px;
+  }
+
+  .fonctionnement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .fonctionnement .case {
+    margin: 0px;
+    width: 30%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer .titre {
+    padding-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

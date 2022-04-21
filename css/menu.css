@@ -1,0 +1,300 @@
+@charset "UTF-8";
+.entrées {
+  animation-duration: 1s;
+  animation-name: fondutransition;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 0px;
+  }
+}
+.plats {
+  animation-duration: 1s;
+  animation-name: fondutransition;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 0px;
+    visibility: visible;
+  }
+}
+.desserts {
+  animation-duration: 1s;
+  animation-name: fondutransition;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fondutransition {
+  from {
+    opacity: 0;
+    top: 0%;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    margin-top: 0px;
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 0;
+  justify-content: center;
+}
+.checkbox i {
+  color: white;
+  font-size: 26px;
+}
+
+.liste:hover .checkbox {
+  width: 60px;
+  background: #99E2D0;
+  transition-duration: 1s;
+}
+.liste:hover .checkbox i {
+  transform: rotate(360deg);
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+
+.coeurvide {
+  position: absolute;
+  color: black;
+  top: 27px;
+}
+
+.coeurplein {
+  position: absolute;
+  color: transparent;
+  transform: scale(0.5);
+  top: 27px;
+  width: 21px;
+}
+.coeurplein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+body {
+  font-family: Roboto;
+  margin: 0px;
+}
+
+header {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+header img {
+  height: 30px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+header i {
+  font-size: 20px;
+  left: 10px;
+  position: absolute;
+}
+
+section {
+  height: 1404px;
+}
+section .imagefond {
+  height: 250px;
+}
+section .imagefond img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.essentiel {
+  background-color: #eaeaea;
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+  position: relative;
+  top: -35px;
+}
+.essentiel .entete {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.essentiel .entete h1 {
+  font-family: Shrikhand;
+}
+.essentiel .entete i {
+  font-size: 20px;
+}
+.essentiel .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.essentiel .menu .divtitre {
+  width: 90%;
+}
+.essentiel .menu .divtitre h2 {
+  width: 2.5em;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: solid #99E2D0;
+}
+.essentiel .menu .liste {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: grey 0px 1px 5px 0px;
+  width: 90%;
+  height: 70px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.essentiel .menu .liste .prix {
+  font-weight: bold;
+  display: flex;
+}
+.essentiel .menu .liste .prix p {
+  margin: 40px 20px 0px 0px;
+}
+.essentiel .menu .liste p {
+  margin: 17px 0px 0px 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.essentiel .menu .liste .infoduplat {
+  font-size: 14px;
+}
+.essentiel .explorer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.essentiel .explorer p {
+  padding: 15px 25px 15px 25px;
+  border-radius: 25px 25px 25px 25px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 15px;
+  margin: 30px;
+  box-shadow: grey 0px 1px 5px 0px;
+  width: 140px;
+  text-align: center;
+}
+
+footer {
+  background: #353535;
+  color: #fff;
+  height: 200px;
+  position: relative;
+}
+footer ul {
+  list-style: none;
+  margin: 0px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer .titre {
+  font-family: Shrikhand;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+footer i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*<--------------------------FOOTER SPECIAL MENU2-------------------------->*/
+.footermenu2 {
+  position: relative;
+  top: 90px;
+}
+
+/*<--------------------------BOUTON ANIMATION-------------------------->*/
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: grey 0px 3px 10px 0px;
+  cursor: pointer;
+}
+
+/*<--------------------------POLICE-------------------------->*/
+@font-face {
+  font-family: Shrikhand;
+  src: url(../police/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../police/Roboto-Regular.ttf);
+}
+/*<--------------------------DESK-------------------------->*/
+@media screen and (min-width: 769px) {
+  section {
+    height: 864px !important;
+  }
+
+  .menu {
+    display: flex !important;
+    justify-content: space-evenly !important;
+  }
+  .menu .liste {
+    width: 28% !important;
+  }
+  .menu .liste p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
