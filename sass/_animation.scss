@@ -1,6 +1,8 @@
 .entrées {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fondutransition;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fondutransition {
@@ -23,8 +25,11 @@
 
 
   .plats {
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-name: fondutransition;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fondutransition {
@@ -38,6 +43,7 @@
       opacity: 1;
       top:100%;
       margin-top: 0px;
+      visibility: visible;
     }
   }
 
@@ -45,8 +51,11 @@
 
 
   .desserts {
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-name: fondutransition;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fondutransition {
