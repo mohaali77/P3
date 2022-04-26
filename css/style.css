@@ -68,6 +68,7 @@
   transition-duration: 0.2s;
 }
 
+/*<--------------------------GENERAL-------------------------->*/
 body {
   font-family: Roboto;
   margin: 0px;
@@ -271,7 +272,7 @@ footer i {
   font-family: Roboto;
   src: url(../police/Roboto-Regular.ttf);
 }
-/*<--------------------------DESK-------------------------->*/
+/*<--------------------------DESK ET TABLETTE-------------------------->*/
 @media screen and (min-width: 769px) {
   .restaurants {
     display: flex;

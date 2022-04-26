@@ -1,3 +1,5 @@
+/*<--------------------------FONDU TRANSITION-------------------------->*/
+
 .entrées {
     animation-duration: 1s;
     animation-name: fondutransition;
@@ -19,8 +21,6 @@
 
     }
 }
-
-
 
 
 
@@ -48,8 +48,6 @@
   }
 
 
-
-
   .desserts {
     animation-duration: 1s;
     animation-name: fondutransition;
@@ -73,6 +71,7 @@
   }
 
 
+/*<--------------------------ENCOCHE-------------------------->*/
 
 
 .checkbox {
@@ -94,8 +93,8 @@
     transition-duration: 1s;
 
   i {
-      transform: rotate(360deg);
       transition-property: transform;
+      transform: rotate(360deg);
       transition-duration: 0.8s;
   }
 

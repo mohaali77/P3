@@ -1,6 +1,7 @@
 @import '_loader.scss';
 @import '_coeur-accueil.scss';
 
+/*<--------------------------GENERAL-------------------------->*/
 
 body {
     font-family: Roboto;
@@ -251,7 +252,7 @@ footer {
 }
 
 
-/*<--------------------------DESK-------------------------->*/
+/*<--------------------------DESK ET TABLETTE-------------------------->*/
 
 
 @media screen and (min-width: 769px)
