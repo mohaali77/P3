@@ -187,10 +187,15 @@ footer {
 
 /*<--------------------------BOUTON ANIMATION-------------------------->*/
 
-.btn:hover {
-    opacity: 0.9;
-    box-shadow: grey 0px 3px 10px 0px;
-    cursor: pointer;
+.btn {
+    transform: scale(1);
+
+    &:hover {
+        opacity: 0.9;
+        box-shadow: grey 0px 3px 10px 0px;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
 }
 
 
